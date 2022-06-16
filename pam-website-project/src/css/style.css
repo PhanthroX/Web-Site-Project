@@ -2,73 +2,96 @@
     Colorindo o fundo que envolve o body.
 
     */
-    body {
-        background: #cc047fb9;
-    }
-
-
+        body {
+            background: #cc047fb9;
+        }
 /*
-    Colorindo o fundo que envolve a class principal.
+    Colorindo o fundo e organizando a class principal.
 
     */
-    .principal {
-        background: #fc649ecb;
-    }
+        .principal {
+            background: #fc649ecb;
+        }
 
-     
+        .principal-inicio {
+            text-align: center;
+            padding: 3%;
+            background: #fa81f0;
+            font-size: 35px;
+            font-style: italic;
+            text-align: center;
+        }
 
-/*
-    Colorindo o texto /  Alinhando ao centro e alterando o tamanho da fonte.
+        #logo-studio {
+            width: 1000px;
+            height: 800px;
+        }
 
-    */
-    h1 {
-        color:#3d001ff5;
-        text-align: center; font-size: 60px;
-    }
-    em {
-        color:#3d001ff5;
-    }
+        .principal-fotos {
+            padding: 5%;
+        }
 /*
     Estilização das fotos.
 
     */
-    #foto {
-        width: 600px; height: 704px;
-    }
-    #foto2 {
-        width: 662px;
-        height: 704px;
-    }
-    #foto3 {
-        width: 662px;
-        height: 704px;
-    }
+        #foto {
+            width: 600px; height: 704px;
+            padding: 15px;
+        }
+        #foto2 {
+            width: 662px;
+            height: 704px;
+            padding: 10px;
+        }
+        #foto3 {
+            width: 662px;
+            height: 704px;
+            padding: 10px;
+        }
+        
+/*
+    Colorindo o texto /  Alinhando ao centro e alterando o tamanho da fonte.
 
+    */
+        h1 {
+            color:#3d001ff5;
+            text-align: center; font-size: 60px;
+        }
+        em {
+            color:#3d001ff5;
+        }
 
 /*
     Alinhando ao centro cada parágrafo.
 
     */
-    p {
-        text-align: center;
-    }
-
-    #beleza {
-    font-size: 25px;
-}
-
+        p {
+            text-align: center;
+        }
 /*
     Estilizando a class dos serviços.
 
     */
-.itens {
-    font-style: italic;
-}
+        .itens {
+            font-style: italic;
+            font-size: 150%;
+        }
 
-h2 {
-    text-align: center;
-}
+        h2 {
+            text-align: center;
+        }
 
-.servicos {
-    background: #FFFFFF;
-}
+        .servicos {
+            background: #be59ec;
+            padding: 20px;
+        }
+
+        ul {
+            display: inline-block;
+            vertical-align: top;
+            padding: 40px;
+        }
+
+        #foto_serv {
+            width: 250px;
+        }
