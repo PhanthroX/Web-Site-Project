@@ -16,7 +16,7 @@
         .principal-inicio {
             text-align: center;
             padding: 3%;
-            background: #fa81f0;
+            background: #be59ec;
             font-size: 35px;
             font-style: italic;
             text-align: center;
@@ -53,10 +53,6 @@
     Colorindo o texto /  Alinhando ao centro e alterando o tamanho da fonte.
 
     */
-        h1 {
-            color:#3d001ff5;
-            text-align: center; font-size: 60px;
-        }
         em {
             color:#3d001ff5;
         }
@@ -79,6 +75,7 @@
 
         h2 {
             text-align: center;
+            font-size: 40px;
         }
 
         .servicos {
