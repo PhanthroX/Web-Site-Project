@@ -3,28 +3,28 @@
 
     */
         body {
-            background: #cc047fb9;
+            background: #000000;
         }
 /*
     Colorindo o fundo e organizando a class principal.
 
     */
         .principal {
-            background: #fc649ecb;
+            background: #fc649e;
         }
 
         .principal-inicio {
             text-align: center;
-            padding: 3%;
-            background: #be59ec;
+            padding: 4%;
+            background: #eeb3f3;
             font-size: 35px;
             font-style: italic;
             text-align: center;
         }
 
         #logo-studio {
-            width: 1000px;
-            height: 800px;
+            width: 800px;
+            height: 700px;
         }
 
         .principal-fotos {
