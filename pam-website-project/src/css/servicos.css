@@ -1,0 +1,54 @@
+/*
+    Adicionando cor ao fundo do cabeçalho e ajustando o padding.
+    */
+
+header {
+    background: #eeb3f3;
+    padding: 20px 0;
+}
+
+/*
+    Criando a posição da div caixa e centralizando a logo e a home na página.
+    */
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*
+    Ajustando o tamanho da logo.
+    */
+#logo {
+    width: 300px;
+    height: 250px;
+}
+
+/*
+    Ajustando a posição de navegação. 
+    (Absolute serve para quebrar a posição padrão de um item, podendo assim, realocar o mesmo)
+    */
+nav {
+    position: absolute;
+    top: 125px;
+    right: 0px;
+}
+
+/*
+    Ajustando o display dos itens da home para que fiquem alinhados um ao lado do outro. (inline)
+    */
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+/*
+    Estilizando os itens da home.
+    (A tag <a> serve como âncora(link) para outra página html)
+    */
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+}
