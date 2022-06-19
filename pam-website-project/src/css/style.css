@@ -80,15 +80,19 @@
 
         .servicos {
             background: #be59ec;
-            padding: 20px;
         }
 
         ul {
             display: inline-block;
             vertical-align: top;
             padding: 40px;
+            position: absolute;
+            left: 820px;
+
         }
 
         #foto_serv {
             width: 250px;
+            position: relative;
+            left: 1100px;
         }
