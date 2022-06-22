@@ -48,29 +48,86 @@ nav li {
     */
 nav a {
     text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 22px;
+    color:aliceblue;
+    font-weight:lighter;
+    font-size: 25px;
+}
+
+/*
+    Com o hover é possível interagir com o usuário a partir de onde estiver o mouse.
+    Por exemplo, aplicar cor e sublimar o menu de navegação.
+    */
+
+nav a:hover {
+    color:aqua;
+    text-decoration:none;
+
 }
 
 /*
     Class Strong para os títulos importantes e itens para italico.
+    A class servicos1 li possui a organização da margem dos itens.
     */
+
+.servicos1 li{
+    display: inline-block;
+    margin-left: 08%;
+    vertical-align: top;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background: #f19595;
+    margin: 0 1.5%;
+    text-align: center;
+    border: 2px solid #181618a6;
+    border-radius: 10px;
+
+}
+
+.servicos1 {
+    background: #ae04bea6;
+}
+
+/*
+    hover específico para quando o mouse estiver em cima dos intes da li trocar a cor.
+    */
+.servicos1 li:hover {
+    border-color: aqua;
+}
+
+/*
+    Para aumentar a fonte do titulo de cada item para dar impressão de selecinado.
+    */
+.servicos1 li:hover h2 {
+    font-size: 50px;
+}
+
+/*
+    Troca a cor da borda quando o usuário clicar com o mouse em cima.
+    */
+.servicos1 li:active {
+    border-color:#eeb3f3;
+}
+
 .strong {
-    font-weight: bold;
     font-size: 40px;
-    padding: 5%;
-    text-align: center;    
+    padding: 2%;
+    text-align: center;  
+    color:aliceblue; 
+    font-weight:lighter;
 }
 
 .itens {
     font-style: italic;
     font-size: 30px;
-    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    color: #000000;
 }
 
 .fotos {
-    weight: 480px;
-    height: 640px;
-    display: block;
+    weight: 380px;
+    height: 540px;
+    padding: 1%;
+    margin-top: 2%;
 }
