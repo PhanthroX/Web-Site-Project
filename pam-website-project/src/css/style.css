@@ -15,7 +15,7 @@
 
         .principal-inicio {
             text-align: center;
-            padding: 7%;
+            padding: 1%;
             background: #eeb3f3;
             font-size: 35px;
             font-style: italic;
@@ -23,29 +23,29 @@
         }
 
         #logo-studio {
-            width: 800px;
-            height: 700px;
+            width: 650px;
+            height: 600px;
         }
 
         .principal-fotos {
-            padding: 5%;
+            padding: 2%;
         }
 /*
     Estilização das fotos.
 
     */
         #foto {
-            width: 600px; height: 704px;
+            width: 700px; height: 800px;
             padding: 15px;
         }
         #foto2 {
-            width: 662px;
-            height: 704px;
+            width: 500px;
+            height: 550px;
             padding: 10px;
         }
         #foto3 {
-            width: 662px;
-            height: 704px;
+            width: 500px;
+            height: 550px;
             padding: 10px;
         }
         
@@ -87,12 +87,13 @@
             vertical-align: top;
             padding: 40px;
             position: absolute;
-            left: 820px;
+            left: 540px;
 
         }
 
         #foto_serv {
             width: 250px;
             position: relative;
-            left: 1100px;
+            left: 820px;
+            vertical-align: bottom;
         }
