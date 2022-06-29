@@ -4,7 +4,7 @@
 
 header {
     background: #eeb3f3;
-    padding:0;
+    padding: 0;
 }
 
 /*
@@ -16,12 +16,24 @@ header {
     margin: 0 auto;
 }
 
+#pam {
+    font-size: 60px;
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+    top: 60px;
+    color: aliceblue;
+    font-style: oblique;
+
+}
+
 /*
     Ajustando o tamanho da logo.
     */
 #logo {
     width: 300px;
     height: 350px;
+    vertical-align: bottom;
 }
 
 /*
@@ -48,8 +60,8 @@ nav li {
     */
 nav a {
     text-transform: uppercase;
-    color:aliceblue;
-    font-weight:lighter;
+    color: aliceblue;
+    font-weight: lighter;
     font-size: 25px;
 }
 
@@ -59,8 +71,8 @@ nav a {
     */
 
 nav a:hover {
-    color:aqua;
-    text-decoration:none;
+    color: aqua;
+    text-decoration: none;
 
 }
 
@@ -69,7 +81,7 @@ nav a:hover {
     A class servicos1 li possui a organização da margem dos itens.
     */
 
-.servicos1 li{
+.servicos1 li {
     display: inline-block;
     margin-left: 08%;
     vertical-align: top;
@@ -78,6 +90,7 @@ nav a:hover {
     padding: 30px 20px;
     background: #f19595;
     margin: 0 1.5%;
+
     text-align: center;
     border: 2px solid #181618a6;
     border-radius: 10px;
@@ -85,7 +98,9 @@ nav a:hover {
 }
 
 .servicos1 {
-    background: #ae04bea6;
+    background: url("https://img.freepik.com/fotos-gratis/textura-aquarela-rosa-em-papel-reciclado_95678-439.jpg?t=st=1656512302~exp=1656512902~hmac=9743254e8d057fa89583757dc86566651ae0fa3f522a6390669dd8c5fb27e366&w=1480");
+    background-size: 100%;
+    padding-bottom: 20px;
 }
 
 /*
@@ -106,15 +121,15 @@ nav a:hover {
     Troca a cor da borda quando o usuário clicar com o mouse em cima.
     */
 .servicos1 li:active {
-    border-color:#eeb3f3;
+    border-color: #eeb3f3;
 }
 
 .strong {
     font-size: 40px;
     padding: 2%;
-    text-align: center;  
-    color:aliceblue; 
-    font-weight:lighter;
+    text-align: center;
+    color: aliceblue;
+    font-weight: lighter;
 }
 
 .itens {
@@ -126,8 +141,30 @@ nav a:hover {
 }
 
 .fotos {
-    weight: 380px;
+    width: 380px;
     height: 540px;
     padding: 1%;
     margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+/*
+    Estilizando o rodapé da página com a logo, background e copyright.
+    */
+
+footer {
+    text-align: center;
+    background: url("https://img.freepik.com/fotos-gratis/texure-rosa_95678-41.jpg?t=st=1656537294~exp=1656537894~hmac=bdda1d711b2c17a125fc2dcaf4de8aaed6d6af75047b5c0d9d6be32e1991fe53&w=1380");
+    background-size: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#logo_rodape {
+    width: 150px;
+    height:150px;
+}
+
+.copy {
+    font-size: 13px;
 }
