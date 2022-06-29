@@ -1,11 +1,4 @@
 /*
-    Colorindo o fundo que envolve o body.
-
-    */
-        body {
-            background: #000000;
-        }
-/*
     Colorindo o fundo e organizando a class principal.
 
     */
@@ -14,21 +7,34 @@
         }
 
         .principal-inicio {
-            text-align: center;
-            padding: 7%;
-            background: #eeb3f3;
-            font-size: 35px;
+            display: inline-block;
+            position: absolute;
+            left: 220px;
+            top: 150px;
+        }
+
+        .crie {
+            font-size: 40px;
             font-style: italic;
+            color: aliceblue;
+            font-style: oblique;
+            display: inline-block;
+            position: absolute;
             text-align: center;
+            left: 650px;
+            padding-top: 30px;
         }
 
         #logo-studio {
-            width: 800px;
-            height: 700px;
+            width: 170px;
+            height: 170px;
         }
 
         .principal-fotos {
             padding: 5%;
+            background: url("https://img.freepik.com/fotos-gratis/textura-aquarela-rosa-em-papel-reciclado_95678-439.jpg?t=st=1656512302~exp=1656512902~hmac=9743254e8d057fa89583757dc86566651ae0fa3f522a6390669dd8c5fb27e366&w=1480");
+            background-size: 100%;
+
         }
 /*
     Estilização das fotos.
@@ -68,7 +74,7 @@
     Estilizando a class dos serviços.
 
     */
-        .itens {
+        .itens1 {
             font-style: italic;
             font-size: 150%;
         }
@@ -79,20 +85,23 @@
         }
 
         .servicos {
-            background: #be59ec;
+            background: #eeb3f3;
+            vertical-align: bottom;
         }
 
-        ul {
+        .ul_pagina_principal {
             display: inline-block;
-            vertical-align: top;
+            vertical-align:middle;
             padding: 40px;
             position: absolute;
             left: 820px;
-
         }
 
         #foto_serv {
             width: 250px;
             position: relative;
             left: 1100px;
+            vertical-align: bottom;
         }
+
+        
