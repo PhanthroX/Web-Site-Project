@@ -167,4 +167,9 @@ footer {
 
 .copy {
     font-size: 13px;
+    width: 260px;
+    height: 360px;
+    padding: 1%;
+    margin-top: 2%;
+    text-align: center;
 }

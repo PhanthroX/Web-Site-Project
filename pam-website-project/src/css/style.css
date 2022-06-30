@@ -13,18 +13,6 @@
             top: 150px;
         }
 
-        .crie {
-            font-size: 40px;
-            font-style: italic;
-            color: aliceblue;
-            font-style: oblique;
-            display: inline-block;
-            position: absolute;
-            text-align: center;
-            left: 650px;
-            padding-top: 30px;
-        }
-
         #logo-studio {
             width: 170px;
             height: 170px;
@@ -34,24 +22,29 @@
             padding: 5%;
             background: url("https://img.freepik.com/fotos-gratis/textura-aquarela-rosa-em-papel-reciclado_95678-439.jpg?t=st=1656512302~exp=1656512902~hmac=9743254e8d057fa89583757dc86566651ae0fa3f522a6390669dd8c5fb27e366&w=1480");
             background-size: 100%;
+            width: 650px;
+            height: 600px;
+        }
 
+        .principal-fotos {
+            padding: 2%;
         }
 /*
     Estilização das fotos.
 
     */
         #foto {
-            width: 600px; height: 704px;
+            width: 700px; height: 800px;
             padding: 15px;
         }
         #foto2 {
-            width: 662px;
-            height: 704px;
+            width: 500px;
+            height: 550px;
             padding: 10px;
         }
         #foto3 {
-            width: 662px;
-            height: 704px;
+            width: 500px;
+            height: 550px;
             padding: 10px;
         }
         
@@ -95,6 +88,8 @@
             padding: 40px;
             position: absolute;
             left: 820px;
+            left: 540px;
+
         }
 
         #foto_serv {
@@ -102,6 +97,6 @@
             position: relative;
             left: 1100px;
             vertical-align: bottom;
+            left: 820px;
+            vertical-align: bottom;
         }
-
-        
