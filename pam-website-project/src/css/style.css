@@ -22,8 +22,12 @@
             padding: 5%;
             background: url("https://img.freepik.com/fotos-gratis/textura-aquarela-rosa-em-papel-reciclado_95678-439.jpg?t=st=1656512302~exp=1656512902~hmac=9743254e8d057fa89583757dc86566651ae0fa3f522a6390669dd8c5fb27e366&w=1480");
             background-size: 100%;
-            width: 650px;
-            height: 600px;
+        }
+
+        .crie {
+            font-style: italic;
+            font-weight: bolder;
+            color: #eeb3f3;
         }
 
         .principal-fotos {
