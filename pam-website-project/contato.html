@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img id="logo" src="src/img/foto_modelo2.png"></h1>
+                <h1><img id="logo" src="src/img/foto_modelo2.png" alt="Imagem da modelo de perfil Pâmela Medeiros na pagina de contato"></h1>
                     <nav>
                         <ul>
                             <li><a href="home.html">Home</a></li>
@@ -31,16 +31,56 @@
         <main>
             <form>
                 <label for="nomesobrenome">Nome e Sobrenome</label>
-                <input type="text" id="nomesobrenome">
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="email" id="email" class="input-padrao" required placeholder="InformeSeuEmail@dominio.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-                <input type="submit" value="Enviar Formulário">
+                <label for="comentario">Deixe Sua Mensagem</label>
+                <textarea  cols="70" rows="10" id="comentario" class="input-padrao"></textarea required>
+                
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="tipo-contato" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefone"><input type="radio" name="tipo-contato" value="telefone" id="radio-telefone">Telefone</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="tipo-contato" value="Whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Qual horário para contato?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox">Gostaria de receber dicas de cuidados e promoções por email?</label>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
             </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda à Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="outros-horarios">Em ocasiões específicas os horários podem ser negociados.</p>
         </main>
 
         <footer>

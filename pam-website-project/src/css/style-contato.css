@@ -16,18 +16,79 @@ form {
 }
 
 /* 
-    Alterando a forma de exibição das etiquetas e dos inputs
+    Alterando a forma de exibição das etiquetas e dos inputs, assim como o espaçamento,
+    tamanho da fonte e margem.
+
+    Tratando-se de dados e inputs para melhor visualização do código é melhor utilizar a tag <fieldset>.
+    Dentro do fieldset não usa-se a tag <p>, a mesma é substituida pela tag <legend>.
     */
 
-form label {
+form label, form legend {
     display:block;
     font-size: 20px;
     margin: 0 0 10px;
+    cursor: pointer;
 }
 
-form input {
+
+.input-padrao {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
+
+.checkbox {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(223, 75, 149);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    border-color: white;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background: rgb(206, 13, 109);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.enviar:active {
+    border-color: aqua;
+}
+
+/* 
+    Utiliza-se a tag <table> para organizar itens de tabela, como por exemplo o horário de funcionamento da empresa.
+    Assim como as outras páginas possuem head, body e footer, a table também tem.
+    */
+
+table {
+    margin: 20px 350px 40px;
+}
+
+thead {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+#outros-horarios {
+    font-style: italic;
+    font-weight: bolder;
+    margin-bottom: 35px;
+    text-align: center;
+}
+

@@ -32,6 +32,8 @@
 
         .principal-fotos {
             padding: 2%;
+            text-align: center;
+            border-radius: 10px;
         }
 /*
     Estilização das fotos.
@@ -61,13 +63,6 @@
         }
 
 /*
-    Alinhando ao centro cada parágrafo.
-
-    */
-        p {
-            text-align: center;
-        }
-/*
     Estilizando a class dos serviços.
 
     */
@@ -84,6 +79,7 @@
         .servicos {
             background: #ffffff;
             vertical-align: bottom;
+            border-radius: 10px;
         }
 
         .ul_pagina_principal {
