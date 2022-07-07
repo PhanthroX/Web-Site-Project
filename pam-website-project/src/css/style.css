@@ -3,7 +3,7 @@
     */
 
 header {
-    background: #eeb3f3;
+    background: #ffffff;
     padding: 0;
 }
 
@@ -23,7 +23,7 @@ header {
     position: absolute;
     left: 90px;
     top: 45px;
-    color: aliceblue;
+    color: #fc00fc;
     font-style: oblique;
 
 }
@@ -61,7 +61,7 @@ nav li {
     */
 nav a {
     text-transform: uppercase;
-    color: aliceblue;
+    color: #fc00fc;
     font-weight: lighter;
     font-size: 25px;
 }

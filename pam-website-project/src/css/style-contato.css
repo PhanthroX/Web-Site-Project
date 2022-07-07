@@ -1,0 +1,33 @@
+/* 
+    Alterando a largura do conteúdo main da contact page.
+    */
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* 
+    Criando uma margem para espaçamento entre o formulário, header e footer.
+    */
+
+form {
+    margin: 40px 0;
+}
+
+/* 
+    Alterando a forma de exibição das etiquetas e dos inputs
+    */
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
