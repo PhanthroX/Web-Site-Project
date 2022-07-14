@@ -7,6 +7,10 @@ header {
     padding: 0;
 }
 
+body {
+    font-family: 'rufina', sans-serif;
+}
+
 /*
     Criando a posição da div caixa e centralizando a logo e a home na página.
     */
@@ -18,13 +22,12 @@ header {
 }
 
 #pam {
-    font-size: 60px;
+    font-size: 3em;
     display: inline-block;
     position: absolute;
     left: 90px;
     top: 45px;
     color: #fc00fc;
-    font-style: oblique;
 
 }
 
@@ -130,11 +133,9 @@ nav a:hover {
     padding: 2%;
     text-align: center;
     color: aliceblue;
-    font-weight: lighter;
 }
 
 .itens {
-    font-style: italic;
     font-size: 30px;
     text-align: center;
     margin-top: 2%;

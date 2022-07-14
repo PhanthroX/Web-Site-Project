@@ -6,6 +6,10 @@
             background: #fc649e;
         }
 
+        body {
+            font-family: 'rufina', sans-serif;
+        }
+
         .principal-inicio {
             display: inline-block;
             position: absolute;
@@ -21,13 +25,13 @@
         .background-principal {
             background: url("https://img.freepik.com/fotos-gratis/textura-aquarela-rosa-em-papel-reciclado_95678-439.jpg?t=st=1656512302~exp=1656512902~hmac=9743254e8d057fa89583757dc86566651ae0fa3f522a6390669dd8c5fb27e366&w=1480");
             background-size: 100%;
-            padding: 5%;
+            padding: 2%;
         }
 
         .crie {
-            font-style: italic;
-            font-weight: bolder;
             color: #ffffff;
+            font-family: 'Sacramento', sans-serif;
+            margin-bottom: 10px;
         }
 
         .principal-fotos {
@@ -78,25 +82,35 @@
 
         .servicos {
             background: #ffffff;
-            vertical-align: bottom;
             border-radius: 10px;
+            height: 300px;
         }
 
         .ul_pagina_principal {
             display: inline-block;
             vertical-align:middle;
-            padding: 40px;
+            padding-top: 40px;
             position: absolute;
-            left: 820px;
             left: 540px;
-
         }
 
         #foto_serv {
             width: 250px;
+            height: 280px;
             position: relative;
-            left: 1100px;
+            left: 800px;
+            bottom: 25px;
             vertical-align: bottom;
-            left: 820px;
-            vertical-align: bottom;
+            padding: 5px;
+        }
+
+        .mapa {
+            text-align: center;
+            padding: 3em 0;
+        }
+
+        .mapa h3 {
+            margin: 0 0 2em;
+            font-size: 25px;
+
         }
