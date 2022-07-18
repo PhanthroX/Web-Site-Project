@@ -1,3 +1,88 @@
+/*
+    Adicionando cor ao fundo do cabeçalho e ajustando o padding.
+    */
+
+    header {
+        background: #fefefe;
+        padding: 0;
+    }
+
+    /*
+    Criando a posição da div caixa e centralizando a logo e a home na página.
+    */
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    left: 50px;
+}
+
+#pam {
+    font-size: 3em;
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+    top: 45px;
+    color: #FF00FF;
+}
+
+/*
+    Ajustando o tamanho da logo.
+    */
+#logo {
+    width: 300px;
+    height: 350px;
+    vertical-align: bottom;
+}
+
+/*
+    Ajustando a posição de navegação. 
+    (Absolute serve para quebrar a posição padrão de um item, podendo assim, realocar o mesmo)
+    */
+nav {
+    position: absolute;
+    top: 170px;
+    right: 40px;
+}
+
+/*
+    Ajustando o display dos itens da home para que fiquem alinhados um ao lado do outro. (inline)
+    */
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+/*
+    Estilizando os itens da home.
+    (A tag <a> serve como âncora(link) para outra página html)
+    */
+nav a {
+    text-transform: uppercase;
+    color: #fc00fc;
+    font-size: 25px;
+}
+.principal-inicio {
+    display: inline-block;
+    position: absolute;
+    left: 220px;
+    top: 150px;
+}
+#logo-studio {
+    width: 170px;
+    height: 170px;
+}
+
+/*
+    Com o hover é possível interagir com o usuário a partir de onde estiver o mouse.
+    Por exemplo, aplicar cor e sublimar o menu de navegação.
+    */
+
+nav a:hover {
+    color: aqua;
+
+}
+
 /* 
     Alterando a largura do conteúdo main da contact page.
     */
@@ -5,6 +90,10 @@
 main {
     width: 940px;
     margin: 0 auto;
+}
+
+body {
+    background: linear-gradient(#ffe4e4, #f3c1c1, #f59e9e);
 }
 
 /* 
@@ -50,8 +139,8 @@ form label, form legend {
     color: white;
     font-weight: bold;
     font-size: 18px;
+    border: #fefefe;
     border-radius: 5px;
-    border-color: white;
     transition: 1s all;
 }
 
@@ -59,10 +148,6 @@ form label, form legend {
     background: rgb(206, 13, 109);
     transform: scale(1.2);
     cursor: pointer;
-}
-
-.enviar:active {
-    border-color: aqua;
 }
 
 /* 
@@ -92,3 +177,26 @@ td, th {
     text-align: center;
 }
 
+/*
+    Estilizando o rodapé da página com a logo, background e copyright.
+    */
+
+    footer {
+        text-align: center;
+        background: url("https://img.freepik.com/fotos-gratis/texure-rosa_95678-41.jpg?t=st=1656537294~exp=1656537894~hmac=bdda1d711b2c17a125fc2dcaf4de8aaed6d6af75047b5c0d9d6be32e1991fe53&w=1380");
+        background-size: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    
+    }
+    
+    #logo_rodape {
+        width: 150px;
+        height:150px;
+    }
+    
+    .copy {
+        font-size: 13px;
+        margin-top: 2%;
+        text-align: center;
+    }

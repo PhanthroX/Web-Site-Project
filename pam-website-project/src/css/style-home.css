@@ -1,4 +1,91 @@
 /*
+    Adicionando cor ao fundo do cabeçalho e ajustando o padding.
+    */
+
+    header {
+        background: #fefefe;
+        padding: 0;
+    }
+
+/*
+    Criando a posição da div caixa e centralizando a logo e a home na página.
+    */
+    .caixa {
+        position: relative;
+        width: 940px;
+        margin: 0 auto;
+        left: 50px;
+    }
+    
+    #pam {
+        font-size: 3em;
+        display: inline-block;
+        position: absolute;
+        left: 90px;
+        top: 45px;
+        color: #FF00FF;
+    }
+    
+    /*
+        Ajustando o tamanho da logo.
+        */
+    #logo {
+        width: 300px;
+        height: 350px;
+        vertical-align: bottom;
+    }
+    
+    /*
+        Ajustando a posição de navegação. 
+        (Absolute serve para quebrar a posição padrão de um item, podendo assim, realocar o mesmo)
+        */
+    nav {
+        position: absolute;
+        top: 170px;
+        right: 40px;
+    }
+    
+    /*
+        Ajustando o display dos itens da home para que fiquem alinhados um ao lado do outro. (inline)
+        */
+    nav li {
+        display: inline;
+        margin: 0 0 0 15px;
+    }
+    
+    /*
+        Estilizando os itens da home.
+        (A tag <a> serve como âncora(link) para outra página html)
+        */
+    nav a {
+        text-transform: uppercase;
+        color: #fc00fc;
+        font-size: 25px;
+    }
+    
+    /*
+        Com o hover é possível interagir com o usuário a partir de onde estiver o mouse.
+        Por exemplo, aplicar cor e sublimar o menu de navegação.
+        */
+    
+    nav a:hover {
+        color: aqua;
+    
+    }
+
+    .principal-inicio {
+        display: inline-block;
+        position: absolute;
+        left: 220px;
+        top: 150px;
+    }
+    #logo-studio {
+        width: 170px;
+        height: 170px;
+    }
+
+
+/*
     Colorindo o fundo e organizando a class principal.
 
     */
@@ -10,17 +97,6 @@
             font-family: 'rufina', sans-serif;
         }
 
-        .principal-inicio {
-            display: inline-block;
-            position: absolute;
-            left: 220px;
-            top: 150px;
-        }
-
-        #logo-studio {
-            width: 170px;
-            height: 170px;
-        }
 
         .background-principal {
             background: url("https://img.freepik.com/fotos-gratis/textura-aquarela-rosa-em-papel-reciclado_95678-439.jpg?t=st=1656512302~exp=1656512902~hmac=9743254e8d057fa89583757dc86566651ae0fa3f522a6390669dd8c5fb27e366&w=1480");
@@ -29,9 +105,16 @@
         }
 
         .crie {
-            color: #ffffff;
+            color: #fefefe;
             font-family: 'Sacramento', sans-serif;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 5em;
+            text-shadow: 0 0 20px #fefefe;
+        }
+
+        .crie:hover {
+            font-size: 6em;
+            transition: 1s all;
         }
 
         .principal-fotos {
@@ -44,18 +127,42 @@
 
     */
         #foto {
-            width: 700px; height: 800px;
-            padding: 15px;
+            width: 500px; height: 600px;
+            border-radius: 30px;
+            border: hidden #fefefe;
+            position: relative;
+            left: 28%;
+            margin-top: 20px;
+            box-shadow: 0 0 80px #fefefe;
+        }
+        #foto:hover {
+            border: 2px solid #000;
+            transition: 0.5s all;
+            
         }
         #foto2 {
-            width: 500px;
-            height: 550px;
-            padding: 10px;
+            width: 400px; height: 550px;
+            border: hidden #fefefe;
+            border-radius: 30px;
+            position: relative;
+            left: 4%;
+            box-shadow: 0 0 80px #fefefe;
+        }
+        #foto2:hover {
+            border: 2px solid #000;
+            transition: 0.5s all;
         }
         #foto3 {
-            width: 500px;
-            height: 550px;
-            padding: 10px;
+            width: 400px; height: 550px;
+            border: hidden #fefefe;
+            border-radius: 30px;
+            position: relative;
+            right: 38%;
+            box-shadow: 0 0 80px #fefefe;
+        }
+        #foto3:hover {
+            border: 2px solid #000;
+            transition: 0.5s all;
         }
         
 /*
@@ -72,18 +179,32 @@
     */
         .itens1 {
             font-style: italic;
-            font-size: 150%;
+            font-size: 135%;
+            padding: 3px;
+        }
+
+ /*
+    Com essa ferramenta é possível acrescentar algo antes (before) ou depois (after) do texto ou objeto.
+
+    */
+
+        .itens1:before {
+            content: "★"
         }
 
         h2 {
             text-align: center;
-            font-size: 40px;
+            font-size: 35px;
         }
 
         .servicos {
-            background: #ffffff;
-            border-radius: 10px;
+            background: #fefefe;
+            padding: 1px;
+            border: 1px solid #000;
+            border-radius: 20px;
             height: 300px;
+            background: linear-gradient(#ffe5e5, #cca4a4);
+            margin-top: 40px;
         }
 
         .ul_pagina_principal {
@@ -99,18 +220,144 @@
             height: 280px;
             position: relative;
             left: 800px;
-            bottom: 25px;
+            bottom: 18px;
             vertical-align: bottom;
             padding: 5px;
         }
 
+
+/*
+    Adicionando o mapa e suas características na home page.
+
+    */
+
         .mapa {
             text-align: center;
             padding: 3em 0;
+            border: 1px solid #000;
+            margin-top: 10px;
+            border-radius: 20px;
+            background: linear-gradient(#e2b8b8, #ee9e9e, #f87878);
         }
 
         .mapa h3 {
             margin: 0 0 2em;
-            font-size: 25px;
-
+            font-size: 35px;
         }
+
+
+/*
+    Estilizando o rodapé da página com a logo, background e copyright.
+    */
+
+    footer {
+        text-align: center;
+        background: url("https://img.freepik.com/fotos-gratis/texure-rosa_95678-41.jpg?t=st=1656537294~exp=1656537894~hmac=bdda1d711b2c17a125fc2dcaf4de8aaed6d6af75047b5c0d9d6be32e1991fe53&w=1380");
+        background-size: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    
+    }
+    
+    #logo_rodape {
+        width: 150px;
+        height:150px;
+    }
+    
+    .copy {
+        font-size: 13px;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+        /*
+    Adaptando a o site para desktop e mobile.
+    */
+
+    @media screen and (max-width: 480px) {
+        .body, .caixa, .principal, .servicos .principal-fotos, .background-principal {
+            width: auto;
+        }
+
+        .caixa {
+            left: auto;
+        }
+
+        .crie {
+            font-size: 50px;
+        }
+        .crie:hover {
+            font-size: 60px;
+        }
+
+        #foto, #foto2, #foto3 {
+            width: 50%;
+            height: auto;
+            position: static;
+        }
+        
+        #logo {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            left: 58%;
+            bottom: 20%;
+        }
+
+        .principal-inicio {
+            bottom: 5%;
+        }
+
+        #logo-studio {
+            position: relative;
+            width: 100px;
+            height: auto;
+            bottom: 5%;
+        }
+
+        #pam {
+            position: absolute;
+            left: 10%;
+            font-size: 40px;
+        }
+
+        #foto_serv {
+            width: 200px;
+            height: 250px;
+            position: relative;
+            left: 55%;
+            top: 4%;
+        }
+
+        .ul_pagina_principal {
+            position: relative;
+            left: 7%;
+            bottom: 80%;
+            font-size: 80%;
+        }
+
+        .naveg {
+            position: relative;
+            text-align: center;
+            right: 290px;
+            margin: 10px 0px 10px 10px;
+        }
+
+        nav {
+            display: inline-flex;
+            position: absolute;
+            top: 120px;
+        }
+
+        nav a {
+            display: block;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        nav li {
+            display: block;
+            position: absolute;
+        }
+    }
+

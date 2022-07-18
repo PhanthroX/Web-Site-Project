@@ -3,7 +3,7 @@
     */
 
 header {
-    background: #ffffff;
+    background: #fefefe;
     padding: 0;
 }
 
@@ -27,8 +27,7 @@ body {
     position: absolute;
     left: 90px;
     top: 45px;
-    color: #fc00fc;
-
+    color: #FF00FF;
 }
 
 /*
@@ -65,8 +64,17 @@ nav li {
 nav a {
     text-transform: uppercase;
     color: #fc00fc;
-    font-weight: lighter;
     font-size: 25px;
+}
+.principal-inicio {
+    display: inline-block;
+    position: absolute;
+    left: 220px;
+    top: 150px;
+}
+#logo-studio {
+    width: 170px;
+    height: 170px;
 }
 
 /*
@@ -76,7 +84,6 @@ nav a {
 
 nav a:hover {
     color: aqua;
-    text-decoration: none;
 
 }
 
@@ -92,11 +99,8 @@ nav a:hover {
     width: 30%;
     box-sizing: border-box;
     padding: 30px 20px;
-    background: #f19595;
     margin: 0 1.5%;
-
     text-align: center;
-    border: 2px solid #181618a6;
     border-radius: 10px;
 
 }
@@ -112,13 +116,15 @@ nav a:hover {
     */
 .servicos1 li:hover {
     border-color: aqua;
+    transition: 0.5 all;
 }
 
 /*
     Para aumentar a fonte do titulo de cada item para dar impressão de selecinado.
     */
 .servicos1 li:hover h2 {
-    font-size: 50px;
+    font-size: 46px;
+    transition: 0.5s all;
 }
 
 /*
@@ -132,22 +138,31 @@ nav a:hover {
     font-size: 40px;
     padding: 2%;
     text-align: center;
-    color: aliceblue;
+    color: #fefefe;
+    text-shadow: 0 0 80px #fefefe;
 }
 
 .itens {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-top: 2%;
+    margin-bottom: 20px;
     color: #000000;
 }
 
 .fotos {
     width: 380px;
     height: 540px;
-    padding: 1%;
     margin-top: 2%;
     margin-bottom: 4%;
+    border-radius: 30px;
+    border: 2px solid #fefefe;
+    box-shadow: 0 0 100px #fefefe;
+}
+
+.fotos:hover{
+    border: 2px solid #000;
+    transition: 0.5s all;
 }
 
 /*
@@ -160,6 +175,7 @@ footer {
     background-size: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
+
 }
 
 #logo_rodape {
@@ -172,3 +188,62 @@ footer {
     margin-top: 2%;
     text-align: center;
 }
+
+    /*
+    Adaptando a o site para desktop e mobile.
+    */
+
+    @media screen and (max-width: 480px) {
+        .body, .caixa {
+            width: auto;
+        }
+
+        .caixa {
+            left: auto;
+        }
+
+        #logo {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            left: 58%;
+            bottom: 20%;
+        }
+
+        #logo-studio {
+            position: relative;
+            width: 100px;
+            height: auto;
+            bottom: 5%;
+        }
+
+        #pam {
+            position: absolute;
+            left: 10%;
+            font-size: 40px;
+        }
+
+        .naveg {
+            position: relative;
+            text-align: center;
+            right: 290px;
+            margin: 10px 0px 10px 10px;
+        }
+
+        nav {
+            display: inline-flex;
+            position: absolute;
+            top: 120px;
+        }
+
+        nav a {
+            display: block;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        nav li {
+            display: block;
+            position: absolute;
+        }
+    }
