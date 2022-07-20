@@ -189,25 +189,29 @@ footer {
     text-align: center;
 }
 
-    /*
+        /*
     Adaptando a o site para desktop e mobile.
     */
 
     @media screen and (max-width: 480px) {
-        .body, .caixa {
+        .body, .caixa, .principal, .servicos, .principal-fotos, .background-principal {
             width: auto;
         }
 
         .caixa {
             left: auto;
         }
-
+        
         #logo {
             position: relative;
             width: 200px;
             height: 250px;
             left: 58%;
             bottom: 20%;
+        }
+
+        .principal-inicio {
+            bottom: 5%;
         }
 
         #logo-studio {
@@ -234,6 +238,7 @@ footer {
             display: inline-flex;
             position: absolute;
             top: 120px;
+            right: 70%;
         }
 
         nav a {
@@ -242,8 +247,27 @@ footer {
             text-align: center;
         }
 
-        nav li {
+        .servicos1 {
             display: block;
-            position: absolute;
+            font-size: 50%;
         }
+
+        .itens {
+            font-size: 15px;
+        }
+
+        .fotos {
+            width: 100px;
+            height: 150px;
+        }
+
+        .servicos1 li:hover h2 {
+            font-size: 20px;
+            transition: 0.5s all;
+        }
+
+        .strong {
+            font-size: 35px;
+        }
+        
     }

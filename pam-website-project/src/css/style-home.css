@@ -89,9 +89,7 @@
     Colorindo o fundo e organizando a class principal.
 
     */
-        .principal {
-            background: #fc649e;
-        }
+
 
         body {
             font-family: 'rufina', sans-serif;
@@ -131,6 +129,7 @@
             border-radius: 30px;
             border: hidden #fefefe;
             position: relative;
+            max-width: 100%;
             left: 28%;
             margin-top: 20px;
             box-shadow: 0 0 80px #fefefe;

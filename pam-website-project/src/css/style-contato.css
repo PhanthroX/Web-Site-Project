@@ -7,81 +7,82 @@
         padding: 0;
     }
 
-    /*
+/*
     Criando a posição da div caixa e centralizando a logo e a home na página.
     */
-.caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-    left: 50px;
-}
+    .caixa {
+        position: relative;
+        width: 940px;
+        margin: 0 auto;
+        left: 50px;
+    }
+    
+    #pam {
+        font-size: 3em;
+        display: inline-block;
+        position: absolute;
+        left: 90px;
+        top: 45px;
+        color: #FF00FF;
+    }
+    
+    /*
+        Ajustando o tamanho da logo.
+        */
+    #logo {
+        width: 300px;
+        height: 350px;
+        vertical-align: bottom;
+    }
+    
+    /*
+        Ajustando a posição de navegação. 
+        (Absolute serve para quebrar a posição padrão de um item, podendo assim, realocar o mesmo)
+        */
+    nav {
+        position: absolute;
+        top: 170px;
+        right: 40px;
+    }
+    
+    /*
+        Ajustando o display dos itens da home para que fiquem alinhados um ao lado do outro. (inline)
+        */
+    nav li {
+        display: inline;
+        margin: 0 0 0 15px;
+    }
+    
+    /*
+        Estilizando os itens da home.
+        (A tag <a> serve como âncora(link) para outra página html)
+        */
+    nav a {
+        text-transform: uppercase;
+        color: #fc00fc;
+        font-size: 25px;
+    }
+    
+    /*
+        Com o hover é possível interagir com o usuário a partir de onde estiver o mouse.
+        Por exemplo, aplicar cor e sublimar o menu de navegação.
+        */
+    
+    nav a:hover {
+        color: aqua;
+    
+    }
 
-#pam {
-    font-size: 3em;
-    display: inline-block;
-    position: absolute;
-    left: 90px;
-    top: 45px;
-    color: #FF00FF;
-}
-
-/*
-    Ajustando o tamanho da logo.
-    */
-#logo {
-    width: 300px;
-    height: 350px;
-    vertical-align: bottom;
-}
-
-/*
-    Ajustando a posição de navegação. 
-    (Absolute serve para quebrar a posição padrão de um item, podendo assim, realocar o mesmo)
-    */
-nav {
-    position: absolute;
-    top: 170px;
-    right: 40px;
-}
-
-/*
-    Ajustando o display dos itens da home para que fiquem alinhados um ao lado do outro. (inline)
-    */
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-/*
-    Estilizando os itens da home.
-    (A tag <a> serve como âncora(link) para outra página html)
-    */
-nav a {
-    text-transform: uppercase;
-    color: #fc00fc;
-    font-size: 25px;
-}
-.principal-inicio {
-    display: inline-block;
-    position: absolute;
-    left: 220px;
-    top: 150px;
-}
-#logo-studio {
-    width: 170px;
-    height: 170px;
-}
-
-/*
-    Com o hover é possível interagir com o usuário a partir de onde estiver o mouse.
-    Por exemplo, aplicar cor e sublimar o menu de navegação.
-    */
-
-nav a:hover {
-    color: aqua;
-
-}
+    .principal-inicio {
+        display: inline-block;
+        position: absolute;
+        left: 220px;
+        top: 150px;
+    }
+    #logo-studio {
+        width: 170px;
+        height: 170px;
+    }
 
 /* 
     Alterando a largura do conteúdo main da contact page.
@@ -94,6 +95,7 @@ main {
 
 body {
     background: linear-gradient(#ffe4e4, #f3c1c1, #f59e9e);
+    font-family: 'rufina', sans-serif;
 }
 
 /* 
@@ -157,6 +159,8 @@ form label, form legend {
 
 table {
     margin: 20px 350px 40px;
+    display: block;
+    position: relative;
 }
 
 thead {
@@ -174,6 +178,20 @@ td, th {
     font-style: italic;
     font-weight: bolder;
     margin-bottom: 35px;
+    text-align: center;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    display: block;
+    position: relative;
+}
+
+form {
     text-align: center;
 }
 
@@ -199,4 +217,79 @@ td, th {
         font-size: 13px;
         margin-top: 2%;
         text-align: center;
+    }
+
+            /*
+    Adaptando a o site para desktop e mobile.
+    */
+
+    @media screen and (max-width: 480px) {
+        .body, .caixa, .principal, .servicos, .principal-fotos, .background-principal {
+            width: auto;
+        }
+
+        .caixa {
+            left: auto;
+        }
+        
+        #logo {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            left: 58%;
+            bottom: 20%;
+        }
+
+        .principal-inicio {
+            bottom: 5%;
+        }
+
+        #logo-studio {
+            position: relative;
+            width: 100px;
+            height: auto;
+            bottom: 5%;
+        }
+
+        #pam {
+            position: absolute;
+            left: 10%;
+            font-size: 40px;
+        }
+
+        .naveg {
+            position: relative;
+            text-align: center;
+            right: 290px;
+            margin: 10px 0px 10px 10px;
+        }
+
+        nav {
+            display: inline-flex;
+            position: absolute;
+            top: 120px;
+            right: 70%;
+        }
+
+        nav a {
+            display: block;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .input-padrao {
+            display: block;
+            margin: 0 auto;
+        }
+
+        table {
+            display: block;
+            position: relative;
+            right: 42%;
+        }
+
+        form {
+            text-align: center;
+        }
+
     }
